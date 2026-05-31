@@ -524,7 +524,11 @@
 
   form.addEventListener('submit', async function(event) {
     event.preventDefault();
-
+    
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18200780453/GgEuCM3R3rYcEKW95-ZD'
+    });
+    
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
